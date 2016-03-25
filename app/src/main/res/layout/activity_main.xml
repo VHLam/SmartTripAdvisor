@@ -1,0 +1,598 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffd2d5cf">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/hvt"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/testView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoang Van Thu Park"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/background_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Park"
+                        android:id="@+id/textView"
+                        android:textSize="10dp"
+                        android:textColor="#ff7d7d7d" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phan Dinh Giot, Ward 1, Ho Chi Minh city"
+                        android:textSize="14dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Show map"
+                        android:id="@+id/textView9"
+                        android:onClick="ClickMap1"
+                        android:textStyle="italic"
+                        android:textSize="14dp"
+                        android:textColor="#ff818181" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Phone: +84 8 3847 5529"
+                        android:id="@+id/textView2"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Open 5h30am to 10pm"
+                        android:id="@+id/textView3"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Price: Free ticket, from 10.000 to 20.000 vnd for each snack and drink"
+                        android:id="@+id/textView4"
+                        android:textSize="12dp" />
+
+                    <RatingBar
+                        android:id="@+id/myRatingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:isIndicator="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Pictures"
+                        android:id="@+id/textView5"
+                        android:textSize="16dp"
+                        android:onClick="Pictures1" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageViewa"
+                        android:src="@drawable/galaxy1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <LinearLayout
+                        android:id="@+id/layout1a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageViewa"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/testViewa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Galaxy Tan Phu"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/background_dark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Cinema "
+                            android:id="@+id/textViewa"
+                            android:textSize="10dp"
+                            android:textColor="#ff7d7d7d" />
+
+                        <TextView
+                            android:id="@+id/textView1a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="246 Nguyen Hong Dao Street, Tan Binh District, HCMC"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Show map"
+                            android:id="@+id/textView9a"
+                            android:onClick="ClickMap2"
+                            android:textStyle="italic"
+                            android:textSize="14dp"
+                            android:textColor="#ff818181" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Phone: +84 8 3849 4567"
+                            android:id="@+id/textView2a"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Open 5h30am to 10pm"
+                            android:id="@+id/textView3a"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Price: From 50.000 to 80.000 for a 2D ticket and 120.000 to 14.000 for a 3D ticket (vnd)"
+                            android:id="@+id/textView4a"
+                            android:textSize="12dp" />
+
+                        <RatingBar
+                            android:id="@+id/myRatingBara"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:rating="4.4"
+                            android:isIndicator="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Pictures"
+                            android:id="@+id/textView5a"
+                            android:textSize="16dp"
+                            android:onClick="Pictures2" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageViewb"
+                        android:src="@drawable/nikko1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <LinearLayout
+                        android:id="@+id/layout1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageViewb"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/testViewb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hotel Nikko Saigon"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/background_dark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Hotel"
+                            android:id="@+id/textViewb"
+                            android:textSize="10dp"
+                            android:textColor="#ff7d7d7d" />
+
+                        <TextView
+                            android:id="@+id/textView1b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="235 Nguyen Van Cu Street, District 1, Ho Chi Minh City"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Show map"
+                            android:id="@+id/textView9b"
+                            android:onClick="ClickMap3"
+                            android:textStyle="italic"
+                            android:textSize="14dp"
+                            android:textColor="#ff818181" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Phone: +84 8 3925 7777"
+                            android:id="@+id/textView2b"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Open all day"
+                            android:id="@+id/textView3b"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Price: 98$ for a night"
+                            android:id="@+id/textView4b"
+                            android:textSize="12dp" />
+
+                        <RatingBar
+                            android:id="@+id/myRatingBarb"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:rating="4.4"
+                            android:isIndicator="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Pictures"
+                            android:id="@+id/textView5b"
+                            android:textSize="16dp"
+                            android:onClick="Pictures3" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageViewc"
+                        android:src="@drawable/french1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <LinearLayout
+                        android:id="@+id/layout1c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageViewc"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/testViewc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" La Villa French"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/background_dark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Restaurant"
+                            android:id="@+id/textViewc"
+                            android:textSize="10dp"
+                            android:textColor="#ff7d7d7d" />
+
+                        <TextView
+                            android:id="@+id/textView1c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14 Ngo Quang Huy, Thao Dien Ward, District 2, Ho Chi Minh City"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Show map"
+                            android:id="@+id/textView9c"
+                            android:onClick="ClickMap4"
+                            android:textStyle="italic"
+                            android:textSize="14dp"
+                            android:textColor="#ff818181" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Phone: +84 8 3898 2082"
+                            android:id="@+id/textView2c"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Open from 11h30 - 13h30 and 18h45 to 21h30"
+                            android:id="@+id/textView3c"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Price: 500.000 - 2.200.000 vnd"
+                            android:id="@+id/textView4c"
+                            android:textSize="12dp" />
+
+                        <RatingBar
+                            android:id="@+id/myRatingBarc"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:rating="3.7"
+                            android:isIndicator="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Pictures"
+                            android:id="@+id/textView5c"
+                            android:textSize="16dp"
+                            android:onClick="Pictures4" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageViewd"
+                        android:src="@drawable/hd1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <LinearLayout
+                        android:id="@+id/layout1d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageViewd"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/testViewd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="H&amp;D Tailor"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/background_dark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Shop"
+                            android:id="@+id/textViewd"
+                            android:textSize="10dp"
+                            android:textColor="#ff7d7d7d" />
+
+                        <TextView
+                            android:id="@+id/textView1d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 Pham Hong Thai Street, Ben Thanh Ward, District 1, Ho Chi Minh City, Vietnam"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Show map"
+                            android:id="@+id/textView9d"
+                            android:onClick="ClickMap5"
+                            android:textStyle="italic"
+                            android:textSize="14dp"
+                            android:textColor="#ff818181" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Phone: +84 8 3824 3517"
+                            android:id="@+id/textView2d"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Open from 8h30 - 19h"
+                            android:id="@+id/textView3d"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Price: about 6.000.000vnd"
+                            android:id="@+id/textView4d"
+                            android:textSize="12dp" />
+
+                        <RatingBar
+                            android:id="@+id/myRatingBard"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:rating="5"
+                            android:isIndicator="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Pictures"
+                            android:id="@+id/textView5d"
+                            android:textSize="16dp"
+                            android:onClick="Pictures5" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
